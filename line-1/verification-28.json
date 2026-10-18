@@ -1,0 +1,26 @@
+{
+  "new_tool_tests_passed": 11,
+  "standalone_offline_demo": "passed",
+  "demo_cases_checked": 8,
+  "demo_influential_cases": 7,
+  "wall": {
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG RGB8",
+    "sha256": "bcbac2eea8fbd55bb14e9b0285ae00c1fe02ae49310cdc1109d8d1879d15bf9a"
+  },
+  "jpeg": {
+    "width": 512,
+    "height": 512,
+    "format": "JPEG",
+    "bytes": 66760
+  },
+  "numbered_records": 28,
+  "unchanged_historical_files_checked_against_git": 35,
+  "goal_unchanged": true,
+  "record_shape_and_digest": "passed",
+  "required_output_untracked": true,
+  "new_non_artifact_files_under_100_kb": true,
+  "unmet_visual_requirements": [],
+  "limits": "Local checks and visual inspection carry no independent authority. Synthetic demo is not population evidence."
+}

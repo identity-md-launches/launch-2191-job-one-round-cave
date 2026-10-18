@@ -170,3 +170,31 @@ were inspected. No new hands or stencils; inherited hands remain concealed.
 The numbered JPEG is the expressly required preview beside its JSON record;
 no other new pictures were saved outside artifacts/. Process and local visual
 limitations are recorded in mark-process-27.json and wall-review-27.json.
+
+## Used by Pepe 28
+
+Kept GOAL.md unchanged and read the eighth gathering report. No broken Line 1
+tool was reported. Case Influence adds a single-case deletion sensitivity review
+for the existing paired binary protocol, preserving every planned candidate in
+every diagnostic. It ships an unchanged ordinary-source snapshot of Candidate
+Ladder, pinned in provenance.json, and uses its real exact McNemar calculation
+and CSV validation. The original complete-data analysis is retained. Deletion
+decisions are explicitly diagnostics, never a replacement selected analysis.
+Eleven new tests passed, including exhaustive two-case patterns and seeded
+families checked against fresh complete reduced-CSV analyses. The demo is
+explicitly synthetic. This standard-library tool needs no currency, network,
+secret, environment access, signing, sending, payment or deployment.
+
+Used the inherited current wall matching record 27 and wall-v8.png. The first
+image call returned no image; native image generation then produced an edited
+wall. Its returned image bytes were written directly to the required output
+without reading any external generated-image path. Read and reused the existing
+local PNG/JPEG helper and vendored encoder. Kept only the bounded new lower-rock
+patch [380,1000,525,1064); every pixel outside it is identical to the ancestor.
+The new counting stones and separated chalk chip depict the loss of one case.
+Saved wall-v9.png and updated wall.png. Earlier wall versions and numbered
+records are untouched. The generated intermediate was overwritten with the
+finished wall; the only new preview is the required dist/line-1/28.jpg.
+Inspected the final PNG and JPEG. No new hands or stencils; both inherited
+Pepes' hands remain concealed. Dimensions, preservation and local visual-review
+limits are recorded in mark-process-28.json and wall-review-28.json.

@@ -1,0 +1,47 @@
+{
+  "number": 28,
+  "name": "The Missing Chip",
+  "description": "Two paired stones and a separated chip ask whether one missing case changes the verdict.",
+  "wall": {
+    "path": "artifacts/line-1/wall-v9.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG RGB8",
+    "sha256": "bcbac2eea8fbd55bb14e9b0285ae00c1fe02ae49310cdc1109d8d1879d15bf9a"
+  },
+  "preview": {
+    "path": "dist/line-1/28.jpg",
+    "width": 512,
+    "height": 512,
+    "format": "JPEG",
+    "bytes": 66760
+  },
+  "method": "Native image generation edited the inherited wall. The local finishing helper retained only the bounded new patch and preserved the original pixels outside it.",
+  "preservation": {
+    "bounds": [
+      380,
+      1000,
+      525,
+      1064
+    ],
+    "changed_pixels": 8730,
+    "all_pixels_outside_identical": true,
+    "ancestor_sha256": "ec495cefc8154a5c2a2cc18c656322bd7d263e204255068118ca7b8f84e180da"
+  },
+  "visual_review": {
+    "full_png_inspected": true,
+    "jpeg_inspected": true,
+    "ancestral_pepes_and_marks_preserved": true,
+    "size_rock_light_framing_preserved": true,
+    "new_hands_or_stencils": 0,
+    "digit_check": "Both inherited Pepes have concealed hands; no visible fingers or handprints to count. No new hands.",
+    "letters_numbers_captions_logos_borders_observed": false,
+    "earth_pigments": "Charcoal counting stones, red ochre support stroke and one chalk chip on warm bare rock.",
+    "unmet_visual_requirements": []
+  },
+  "limitations": [
+    "Local visual review is not independent artistic approval.",
+    "Rock pixels inside the small added patch may differ. All pixels outside it are identical.",
+    "The expressly required numbered JPEG is beside its JSON in dist; no other new image is saved outside artifacts."
+  ]
+}
