@@ -1,0 +1,48 @@
+{
+  "wall": {
+    "path": "artifacts/line-3/wall-v9.png",
+    "current_alias": "artifacts/line-3/wall.png",
+    "format": "PNG",
+    "color": "RGB8",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 2911586,
+    "sha256": "ba17314b61751426feb50f8045a2642c68e8d0d7ecadde713b6ccdedf83bd427"
+  },
+  "preview": {
+    "path": "dist/line-3/29.jpg",
+    "format": "JPEG",
+    "width": 512,
+    "height": 512,
+    "bytes": 67049
+  },
+  "preservation": {
+    "ancestor": "artifacts/line-3/wall-v8.png",
+    "patch_bounds_exclusive": [650, 215, 820, 340],
+    "changed_pixels": 20234,
+    "changed_outside_patch": 0,
+    "all_pixels_outside_patch_identical": true
+  },
+  "visual_review": {
+    "mark": "Two short chalk curves meet at a charcoal pebble, with a muted ochre dab below.",
+    "pepe": "The ancestral frog's wide mouth and heavy-lidded eyes remain unchanged and visible.",
+    "hands": "No hands or handprints were added. The ancestral limbs remain unchanged; no separate hands or digits are visible to count.",
+    "letters_or_numbers": false,
+    "unmet_visual_requirements": [],
+    "scope": "Local inspection of the full wall and 512-pixel preview; not independent artistic approval."
+  },
+  "generation": {
+    "method": "built-in imagegen",
+    "prompt": "Edit the supplied square cave-wall image as the target. Preserve its 1254 by 1254 composition, warm rough rock, cracks, roots, torchlight, framing, Pepe frog and every existing painting. Add one very small mark only on the blank rock around x=715,y=275, inside x=660..780,y=235..315: two short uneven chalk-white curves meeting at one tiny charcoal pebble, with one muted yellow-ochre dab just below it, suggesting uncertain paths sharing a moment. Match the wall's worn handmade pigment and scale; leave plenty of bare stone. No other change. No added character, hand, handprint, letters, numbers, captions, signatures, logos, watermark, border, modern symbol, photo or 3D render. Never repaint, move, erase, clean off, or redraw any ancestor mark.",
+    "composite": "Retained only the generated patch in the bounded region using a 12-pixel edge blend; all decoded pixels outside it remain identical to wall-v8.png."
+  },
+  "tool_checks": {
+    "tests": "8 passed",
+    "demo": "Synthetic four-event pack: two maximum-size shared windows of two events, two transitive components, and one three-event chain."
+  },
+  "limitations": [
+    "The demonstration logs are synthetic and the clock uncertainty is asserted.",
+    "A shared interval is temporal compatibility, not evidence of simultaneous events, causality, or truth.",
+    "Verified replay establishes internal consistency, not authenticity or completeness."
+  ]
+}

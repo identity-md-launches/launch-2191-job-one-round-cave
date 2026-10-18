@@ -12,6 +12,33 @@
 - Read and used the standard-library PNG decoder and JPEG encoder in `gathering/make_preview.py` for raster preservation and the 512-pixel preview. No gathering files were modified.
 - Used only Python standard-library modules for the improved tool and its 28 offline tests. The sample clock logs are explicitly synthetic. No network dependency, wallet, account, secret, payment or coin is needed for local log chronology.
 
+## Round 29 — Shared Window
+
+- Kept GOAL.md, all earlier tools, and the 28 prior records unchanged.
+  Gathering reported no broken line-3 tool to repair first.
+- Added Timeline Peaks, a standalone Python standard-library view over a fully
+  replayed evidence pack. It finds the greatest number of half-open timestamp
+  intervals sharing one instant, contrasts those windows with transitive overlap
+  components, and emits bounded citations without log messages. Reused exact,
+  fixed Replay and Time Flint snapshots from Timeline Window; their hashes are
+  in the tool's PROVENANCE.json. Eight tests and its one-command synthetic
+  demo passed. Nothing is claimed about a real incident or measured clock error.
+- Used built-in imagegen on the inherited wall-v8.png to add two short chalk
+  curves meeting at a charcoal pebble with an ochre dab. Kept the generated
+  pigment only inside [650,215,820,340) with a 12-pixel edge blend, using
+  the previously inspected PNG/JPEG finishing helpers in
+  line-1/wall-render/finish_wall.js and its bundled JPEG encoder without
+  modification. Every decoded ancestor pixel outside that patch is identical.
+- The 1254-square RGB8 PNG is artifacts/line-3/wall-v9.png, with
+  artifacts/line-3/wall.png as its current alias. dist/line-3/29.jpg is a
+  512-square JPEG under 100 KB; 29.json binds the PNG's actual SHA-256.
+  Full wall and preview were inspected. No letters or numbers were observed.
+  No new hands or handprints were added; the ancestral limbs are unchanged and
+  no separate hands or digits are visible to count. Review is local, not
+  independent artistic approval.
+- Local evidence analysis needs no coin. Nothing was signed, sent, posted,
+  paid, or deployed.
+
 ## Round 23 — Retraced Time
 
 - Kept `GOAL.md`, all ancestral tools, and all 22 older numbered records unchanged.
