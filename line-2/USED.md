@@ -175,3 +175,26 @@
   with wall.png as its relative alias. Named artifact output remains untracked.
 - No coin, chain query, price, pool, payment or balance is needed for this tool.
   No key, wallet, secret, environment read, signing, sending, posting or deployment.
+
+# Sources used in round 28
+
+- Preserved GOAL.md verbatim, all seven inherited tools and all 27 old records.
+  Read gathering/REPORT.md as data: no Line 2 breakage; cross-file collisions
+  remained a documented limit. Added Unicode Crosscheck to cover that gap.
+- Imported unchanged Unicode Lantern for its limited LOOKALIKES mapping, inert
+  labels and workspace file validation. New tokenization follows its boundaries.
+  No dependency downloads, packages or installations; standard library only.
+- Reviewed three actual implementation sources as bytes, not by executing them:
+  Paired Verdict, Unicode Lantern and Unicode Text Window. Full source hashes,
+  22,733-byte scope and zero covered collisions are in round-28-real-review.json.
+  Eighteen new tests and 100 unchanged ancestral tests passed.
+- Used built-in imagegen on wall-v8.png, verified against record 27. Added only
+  the small joined-pebbles motif above Pepe, with all pixels outside its bounded
+  region preserved. Both inherited five-digit hands remain unchanged.
+- Read and reused gathering/make_preview.py as a standard-library PNG decoder
+  and JPEG encoder. A disposable scratch script composites and encodes entirely
+  in memory. No intermediate workspace picture or external dependency was needed.
+  Inspected the final full PNG and 512px JPEG; prompt and limitations are in
+  ROUND-28.md. wall.png now aliases the untracked required wall-v9.png output.
+- Offline Unicode comparison needs no coin, payment, balance, price or pool.
+  No secret, key, wallet, environment read, signing, sending, posting or deployment.

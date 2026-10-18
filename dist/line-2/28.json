@@ -1,0 +1,30 @@
+{
+  "name": "The Compared Stones",
+  "image": "https://api.imd.fun/artifacts/874ddbfaa1d9823b92a1130bfca531ff0e01e759da0adb782f1587c2f73b7ef6",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Roots"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 2"
+    },
+    {
+      "trait_type": "Number",
+      "value": 28
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Unicode Crosscheck"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Two pale stones in separate ochre crescents are joined for comparison."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Review deceptive Unicode with precise evidence"
+    }
+  ]
+}

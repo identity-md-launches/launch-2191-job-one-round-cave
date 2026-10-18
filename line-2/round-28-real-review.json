@@ -1,0 +1,47 @@
+{
+  "tool": "unicode-crosscheck/1",
+  "unicode_version": "15.0.0",
+  "engine_sha256": "e50d1fb77bd6cfd723c2dbd3749bedf2034c96ea3a2eaf88e4beac4610f6e2f5",
+  "sources": [
+    {
+      "index": 0,
+      "label": "line-1/tools/paired-verdict/paired_verdict.py",
+      "sha256": "ed7f2e286ceb08a9dd88de1b77b4a8858a7856eda5dc9e47d32d0bc3d19ebbe1",
+      "bytes": 8674
+    },
+    {
+      "index": 1,
+      "label": "line-2/tools/unicode-lantern/unicode_lantern.py",
+      "sha256": "e50d1fb77bd6cfd723c2dbd3749bedf2034c96ea3a2eaf88e4beac4610f6e2f5",
+      "bytes": 7810
+    },
+    {
+      "index": 2,
+      "label": "line-2/tools/unicode-text-window/unicode_text_window.py",
+      "sha256": "5cce4371e455952c3485c13ee9ed9d49f61c9623b60327fc6471d8b3600cd225",
+      "bytes": 6249
+    }
+  ],
+  "total_bytes": 22733,
+  "token_count": 2483,
+  "distinct_skeletons": 782,
+  "finding_count": 0,
+  "retained_findings": 0,
+  "omitted_findings": 0,
+  "truncated": false,
+  "findings": [],
+  "assessment": "no-cross-file-collisions-found",
+  "limitations": [
+    "Heuristic triage, not proof of deception or absence of deception.",
+    "NFKC plus Lantern limited case-sensitive lookalikes, not full UTS #39.",
+    "Raw UTF-8 Python-like tokens, including comments and strings; no escape decoding.",
+    "Only cross-file collisions are covered; run Unicode Lantern for other patterns.",
+    "Each occurrence differing from a spelling in an earlier file counts once.",
+    "File order affects counts and witnesses; identical spellings do not collide.",
+    "Witness is the earliest distinct spelling in an earlier file, not all pairs.",
+    "Ranges are zero-based half-open original bytes; line/byte-column are one-based.",
+    "Only LF starts a line; preview_hex is at most 64 original bytes.",
+    "Source labels are unicode_escape encoded; evidence is not redacted.",
+    "Hashes identify bytes, not authenticity; only supplied files are assessed."
+  ]
+}

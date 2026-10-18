@@ -1,0 +1,64 @@
+{
+  "goal_unchanged": true,
+  "old_records_unchanged": 27,
+  "ancestral_tool_files_unchanged": true,
+  "new_record": 28,
+  "record_schema_valid": true,
+  "record_image_hash_matches": true,
+  "required_png_untracked": true,
+  "writes_within_scope": true,
+  "new_nonartifact_files_under_100KB": true,
+  "new_tests_passed": 18,
+  "ancestral_tests_passed": 100,
+  "total_tests_passed": 118,
+  "test_commands": "python3 -B -m unittest discover -s line-2/tools/TOOL -q (all eight tool folders)",
+  "real_source_bytes": 22733,
+  "real_cross_file_collisions": 0,
+  "image": {
+    "wall": "artifacts/line-2/wall-v9.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "format": "RGB8 PNG",
+    "wall_sha256": "874ddbfaa1d9823b92a1130bfca531ff0e01e759da0adb782f1587c2f73b7ef6",
+    "preview": "dist/line-2/28.jpg",
+    "preview_dimensions": [
+      512,
+      512
+    ],
+    "preview_format": "baseline JPEG",
+    "preview_bytes": 89325,
+    "preview_quality": 40,
+    "changed_pixels": 13128,
+    "edit_box": [
+      497,
+      250,
+      650,
+      339
+    ],
+    "changed_bounds": [
+      498,
+      251,
+      649,
+      338
+    ],
+    "pixels_outside_edit_box_identical": true
+  },
+  "visual_review": {
+    "full_png_inspected": true,
+    "preview_inspected": true,
+    "ancestral_paintings_preserved": true,
+    "inherited_hand_digit_counts": [
+      5,
+      5
+    ],
+    "new_hands": 0,
+    "prohibited_text_or_symbols_observed": false,
+    "unmet_visual_requirements": [],
+    "limitations": [
+      "Generated rock texture differs within the bounded new motif region.",
+      "Local visual and behavioral checks are not independent certification."
+    ]
+  }
+}
