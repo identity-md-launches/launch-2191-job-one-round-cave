@@ -8,6 +8,16 @@ import sys
 
 ROOT = Path(__file__).resolve().parent.parent
 CASES = [
+ ('measured effect band', ['gathering/try_effect_band.py'], 0),
+ ('shared effect band', ['shared/effect-band/effect_band.py', 'demo'], 0),
+ ('single deletion influence', ['line-1/tools/case-influence/case_influence.py', '--demo', '--max-details', '2'], 0),
+ ('cross-file Unicode collisions', ['line-2/tools/unicode-crosscheck/unicode_crosscheck.py', '--demo', '--max-findings', '2'], 0),
+ ('actual cross-file sources', ['line-2/tools/unicode-crosscheck/unicode_crosscheck.py', '--files', 'line-1/tools/paired-verdict/paired_verdict.py', 'line-2/tools/unicode-lantern/unicode_lantern.py', 'line-2/tools/unicode-text-window/unicode_text_window.py'], 0),
+ ('shared-time peaks', ['line-3/tools/timeline-peaks/timeline_peaks.py', 'demo'], 0),
+ ('tolerance boundaries', ['line-4/tools/tolerance-flint/tolerance_flint.py', 'demo'], 0),
+ ('tolerance boundary pass', ['line-4/tools/tolerance-flint/tolerance_flint.py', 'check', '100.6 cm', '--reference', '1 m', '--absolute', '1 mm', '--relative', '1/200', '--to', 'mm'], 0),
+ ('tolerance boundary fail', ['line-4/tools/tolerance-flint/tolerance_flint.py', 'check', '100.6001 cm', '--reference', '1 m', '--absolute', '1 mm', '--relative', '1/200'], 1),
+ ('invalid tolerance dimension', ['line-4/tools/tolerance-flint/tolerance_flint.py', 'check', '0 m', '--reference', '0 s'], 2),
  ('shared exact benchmark display', ['shared/benchmark-display/benchmark_display.py', 'demo'], 0),
  ('executed policy benchmark', ['line-1/tools/policy-benchmark/policy_benchmark.py', 'demo'], 0),
  ('plain Unicode window', ['line-2/tools/unicode-text-window/unicode_text_window.py', '--demo', '--max-findings', '2'], 0),
@@ -77,7 +87,7 @@ def main():
                     'opening_lines': run.stdout.splitlines()[:7]}
                 row['passed'] &= row['text']['printable_ascii_and_lf']
             # Small numeric/evidence summaries; full reports are reproducible.
-            keys = ['passes', 'case_count', 'recheck', 'rounded', 'exact_value', 'error', 'filters', 'comparison', 'lower', 'upper', 'within', 'pair', 'line_changes', 'consistent_replacement_rejected', 'runtime_mismatch_rejected', 'rejected_rehashed_replacement', 'analysis', 'asserted_total_bound_ms', 'different_valid_bound_rejected', 'matching_receipt', 'failed_bound_verified', 'failed_bound_calculation_exit', 'rehashed_altered_result_rejected', 'verified', 'retained_findings', 'truncated', 'altered_citation_rejected', 'paired_cases', 'table', 'test', 'candidates', 'comparison_threshold',
+            keys = ['cases_changing_decision_or_direction', 'deletions_checked', 'details_omitted', 'complete_diagnostics_sha256', 'omitted_findings', 'total_bytes', 'token_count', 'distinct_skeletons', 'boundary', 'outside', 'margin', 'allowed_error', 'absolute_error', 'passes', 'case_count', 'recheck', 'rounded', 'exact_value', 'error', 'filters', 'comparison', 'lower', 'upper', 'within', 'pair', 'line_changes', 'consistent_replacement_rejected', 'runtime_mismatch_rejected', 'rejected_rehashed_replacement', 'analysis', 'asserted_total_bound_ms', 'different_valid_bound_rejected', 'matching_receipt', 'failed_bound_verified', 'failed_bound_calculation_exit', 'rehashed_altered_result_rejected', 'verified', 'retained_findings', 'truncated', 'altered_citation_rejected', 'paired_cases', 'table', 'test', 'candidates', 'comparison_threshold',
                     'smallest_evaluated_size_meeting_target', 'sizes', 'finding_count',
                     'assessment', 'sha256', 'value', 'unit', 'check', 'replay',
                     'tampered_report_rejected', 'tampered_timeline_rejected', 'review_errors',

@@ -1,10 +1,30 @@
 {
-  "name": "Not painted yet",
-  "image": "https://api.imd.fun/artifacts/1694079b8c096876644b7db6f84112f2550b53ad024540401ad702809cb35941",
+  "name": "The Measured Gap",
+  "image": "https://api.imd.fun/artifacts/32a8fef5f5ec256ed76c01ff28e1f914f50d011b0a5417a78a1d9ed33c5a34b0",
   "attributes": [
     {
       "trait_type": "Cave",
       "value": "Roots"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Gathering"
+    },
+    {
+      "trait_type": "Number",
+      "value": 9
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Effect Band"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "A dark pebble between pale curves gives evidence a declared band to stay within."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Gathering"
     }
   ]
 }

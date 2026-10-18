@@ -78,3 +78,23 @@ Observed synthetic result: two possible overlaps, one outside event and one
 undated duplicate-key line. Hidden direction controls remain visible as escaped
 evidence. Unshown/outside evidence is explicitly unreviewed. Earlier shared
 tools remain intact. The view proves neither log truth nor safety.
+
+## Eighth gathering: Benchmark Display
+
+[Benchmark Display](benchmark-display/README.md) connects replayed benchmark
+counts with exact rounding. The fixed curated policy demo executes locally.
+
+## Ninth gathering: Effect Band
+
+[Effect Band](effect-band/README.md) joins Line 1's single-case deletion review
+with Line 4's exact absolute-plus-relative tolerance rule. A full-data effect
+may meet a practical band while deletion effects do not. Original exact
+statistical decisions remain visible and unchanged.
+
+```sh
+python3 -B shared/effect-band/effect_band.py demo
+```
+
+Copy the whole folder for standalone offline use. Nine integration checks pass.
+A practical band is a declared descriptive policy, not statistical equivalence;
+never select deletions to improve a decision. Source snapshots ship with hashes.

@@ -1,0 +1,495 @@
+{
+  "schema": "effect-band/1",
+  "input_sha256": "5642f8e07d5612ec2ea9cd2e3521942639719da97f458ecc4fa3a0d01a27e48b",
+  "policy": {
+    "reference": "4/5",
+    "absolute": "1/10",
+    "relative": "0",
+    "rule": "abs(observed-reference) <= absolute + relative*abs(reference)",
+    "unit": "candidate minus baseline pass fraction"
+  },
+  "candidates": [
+    {
+      "candidate": "first",
+      "full_effect": "7/8",
+      "single_deletion_range": {
+        "minimum": "6/7",
+        "maximum": "1"
+      },
+      "full_data_check": {
+        "schema": "tolerance-flint/v1",
+        "request": {
+          "observed": "7/8",
+          "reference": "4/5",
+          "absolute": "1/10",
+          "relative": "0",
+          "to": "1"
+        },
+        "rule": "abs(observed-reference) <= absolute + relative*abs(reference)",
+        "unit": "1",
+        "base_unit": "1",
+        "observed": "0.875",
+        "reference": "0.8",
+        "difference": "0.075",
+        "absolute_error": "0.075",
+        "absolute_tolerance": "0.1",
+        "relative_tolerance": "0",
+        "relative_contribution": "0",
+        "allowed_error": "0.1",
+        "margin": "0.025",
+        "inclusive": true,
+        "passes": true
+      },
+      "minimum_check": {
+        "schema": "tolerance-flint/v1",
+        "request": {
+          "observed": "6/7",
+          "reference": "4/5",
+          "absolute": "1/10",
+          "relative": "0",
+          "to": "1"
+        },
+        "rule": "abs(observed-reference) <= absolute + relative*abs(reference)",
+        "unit": "1",
+        "base_unit": "1",
+        "observed": "6/7",
+        "reference": "0.8",
+        "difference": "2/35",
+        "absolute_error": "2/35",
+        "absolute_tolerance": "0.1",
+        "relative_tolerance": "0",
+        "relative_contribution": "0",
+        "allowed_error": "0.1",
+        "margin": "3/70",
+        "inclusive": true,
+        "passes": true
+      },
+      "maximum_check": {
+        "schema": "tolerance-flint/v1",
+        "request": {
+          "observed": "1",
+          "reference": "4/5",
+          "absolute": "1/10",
+          "relative": "0",
+          "to": "1"
+        },
+        "rule": "abs(observed-reference) <= absolute + relative*abs(reference)",
+        "unit": "1",
+        "base_unit": "1",
+        "observed": "1",
+        "reference": "0.8",
+        "difference": "0.2",
+        "absolute_error": "0.2",
+        "absolute_tolerance": "0.1",
+        "relative_tolerance": "0",
+        "relative_contribution": "0",
+        "allowed_error": "0.1",
+        "margin": "-0.1",
+        "inclusive": true,
+        "passes": false
+      },
+      "all_single_deletion_effects_within_band": false
+    },
+    {
+      "candidate": "second",
+      "full_effect": "7/8",
+      "single_deletion_range": {
+        "minimum": "6/7",
+        "maximum": "1"
+      },
+      "full_data_check": {
+        "schema": "tolerance-flint/v1",
+        "request": {
+          "observed": "7/8",
+          "reference": "4/5",
+          "absolute": "1/10",
+          "relative": "0",
+          "to": "1"
+        },
+        "rule": "abs(observed-reference) <= absolute + relative*abs(reference)",
+        "unit": "1",
+        "base_unit": "1",
+        "observed": "0.875",
+        "reference": "0.8",
+        "difference": "0.075",
+        "absolute_error": "0.075",
+        "absolute_tolerance": "0.1",
+        "relative_tolerance": "0",
+        "relative_contribution": "0",
+        "allowed_error": "0.1",
+        "margin": "0.025",
+        "inclusive": true,
+        "passes": true
+      },
+      "minimum_check": {
+        "schema": "tolerance-flint/v1",
+        "request": {
+          "observed": "6/7",
+          "reference": "4/5",
+          "absolute": "1/10",
+          "relative": "0",
+          "to": "1"
+        },
+        "rule": "abs(observed-reference) <= absolute + relative*abs(reference)",
+        "unit": "1",
+        "base_unit": "1",
+        "observed": "6/7",
+        "reference": "0.8",
+        "difference": "2/35",
+        "absolute_error": "2/35",
+        "absolute_tolerance": "0.1",
+        "relative_tolerance": "0",
+        "relative_contribution": "0",
+        "allowed_error": "0.1",
+        "margin": "3/70",
+        "inclusive": true,
+        "passes": true
+      },
+      "maximum_check": {
+        "schema": "tolerance-flint/v1",
+        "request": {
+          "observed": "1",
+          "reference": "4/5",
+          "absolute": "1/10",
+          "relative": "0",
+          "to": "1"
+        },
+        "rule": "abs(observed-reference) <= absolute + relative*abs(reference)",
+        "unit": "1",
+        "base_unit": "1",
+        "observed": "1",
+        "reference": "0.8",
+        "difference": "0.2",
+        "absolute_error": "0.2",
+        "absolute_tolerance": "0.1",
+        "relative_tolerance": "0",
+        "relative_contribution": "0",
+        "allowed_error": "0.1",
+        "margin": "-0.1",
+        "inclusive": true,
+        "passes": false
+      },
+      "all_single_deletion_effects_within_band": false
+    }
+  ],
+  "sensitivity": {
+    "schema": "case-influence-v1",
+    "input_sha256": "5642f8e07d5612ec2ea9cd2e3521942639719da97f458ecc4fa3a0d01a27e48b",
+    "full_data_analysis": {
+      "schema_version": 1,
+      "input_sha256": "5642f8e07d5612ec2ea9cd2e3521942639719da97f458ecc4fa3a0d01a27e48b",
+      "paired_cases": 8,
+      "baseline_passes": 1,
+      "candidate_count": 2,
+      "familywise_alpha": "0.05",
+      "method": "exact two-sided conditional McNemar per candidate; Holm step-down familywise correction",
+      "candidates": [
+        {
+          "name": "first",
+          "candidate_passes": 8,
+          "candidate_only_pass": 7,
+          "baseline_only_pass": 0,
+          "candidate_minus_baseline_percentage_points": 87.5,
+          "exact_two_sided_p": {
+            "numerator": "1",
+            "denominator": "64",
+            "decimal_16_digits": "0.015625"
+          },
+          "holm_rank": 1,
+          "holm_adjusted_p": {
+            "numerator": "1",
+            "denominator": "32",
+            "decimal_16_digits": "0.03125"
+          },
+          "familywise_reject_equal_discordance": true,
+          "observed_direction": "candidate"
+        },
+        {
+          "name": "second",
+          "candidate_passes": 8,
+          "candidate_only_pass": 7,
+          "baseline_only_pass": 0,
+          "candidate_minus_baseline_percentage_points": 87.5,
+          "exact_two_sided_p": {
+            "numerator": "1",
+            "denominator": "64",
+            "decimal_16_digits": "0.015625"
+          },
+          "holm_rank": 2,
+          "holm_adjusted_p": {
+            "numerator": "1",
+            "denominator": "32",
+            "decimal_16_digits": "0.03125"
+          },
+          "familywise_reject_equal_discordance": true,
+          "observed_direction": "candidate"
+        }
+      ],
+      "assumptions": [
+        "Every row is one independent case evaluated once by the baseline and every candidate.",
+        "Case set, pass rule, candidate family and alpha were fixed before inspecting results.",
+        "All planned candidate comparisons against this baseline are included in this family.",
+        "These tests address equal discordance probabilities, not equivalence or practical value.",
+        "Repeated looks, case selection and correlated cases are not corrected here."
+      ]
+    },
+    "deletions_checked": 8,
+    "distinct_outcome_patterns": 2,
+    "cases_changing_decision_or_direction": 7,
+    "candidates": [
+      {
+        "name": "first",
+        "decision_changes": 7,
+        "direction_changes": 0,
+        "minimum_effect": {
+          "numerator": "6",
+          "denominator": "7"
+        },
+        "maximum_effect": {
+          "numerator": "1",
+          "denominator": "1"
+        }
+      },
+      {
+        "name": "second",
+        "decision_changes": 7,
+        "direction_changes": 0,
+        "minimum_effect": {
+          "numerator": "6",
+          "denominator": "7"
+        },
+        "maximum_effect": {
+          "numerator": "1",
+          "denominator": "1"
+        }
+      }
+    ],
+    "details": [
+      {
+        "removed_case": "synthetic-win-0",
+        "changes": [
+          {
+            "name": "first",
+            "reject_equal_discordance": false,
+            "direction": 1,
+            "decision_changed": true,
+            "direction_changed": false
+          },
+          {
+            "name": "second",
+            "reject_equal_discordance": false,
+            "direction": 1,
+            "decision_changed": true,
+            "direction_changed": false
+          }
+        ],
+        "effects": [
+          {
+            "numerator": "6",
+            "denominator": "7"
+          },
+          {
+            "numerator": "6",
+            "denominator": "7"
+          }
+        ]
+      },
+      {
+        "removed_case": "synthetic-win-1",
+        "changes": [
+          {
+            "name": "first",
+            "reject_equal_discordance": false,
+            "direction": 1,
+            "decision_changed": true,
+            "direction_changed": false
+          },
+          {
+            "name": "second",
+            "reject_equal_discordance": false,
+            "direction": 1,
+            "decision_changed": true,
+            "direction_changed": false
+          }
+        ],
+        "effects": [
+          {
+            "numerator": "6",
+            "denominator": "7"
+          },
+          {
+            "numerator": "6",
+            "denominator": "7"
+          }
+        ]
+      },
+      {
+        "removed_case": "synthetic-win-2",
+        "changes": [
+          {
+            "name": "first",
+            "reject_equal_discordance": false,
+            "direction": 1,
+            "decision_changed": true,
+            "direction_changed": false
+          },
+          {
+            "name": "second",
+            "reject_equal_discordance": false,
+            "direction": 1,
+            "decision_changed": true,
+            "direction_changed": false
+          }
+        ],
+        "effects": [
+          {
+            "numerator": "6",
+            "denominator": "7"
+          },
+          {
+            "numerator": "6",
+            "denominator": "7"
+          }
+        ]
+      },
+      {
+        "removed_case": "synthetic-win-3",
+        "changes": [
+          {
+            "name": "first",
+            "reject_equal_discordance": false,
+            "direction": 1,
+            "decision_changed": true,
+            "direction_changed": false
+          },
+          {
+            "name": "second",
+            "reject_equal_discordance": false,
+            "direction": 1,
+            "decision_changed": true,
+            "direction_changed": false
+          }
+        ],
+        "effects": [
+          {
+            "numerator": "6",
+            "denominator": "7"
+          },
+          {
+            "numerator": "6",
+            "denominator": "7"
+          }
+        ]
+      },
+      {
+        "removed_case": "synthetic-win-4",
+        "changes": [
+          {
+            "name": "first",
+            "reject_equal_discordance": false,
+            "direction": 1,
+            "decision_changed": true,
+            "direction_changed": false
+          },
+          {
+            "name": "second",
+            "reject_equal_discordance": false,
+            "direction": 1,
+            "decision_changed": true,
+            "direction_changed": false
+          }
+        ],
+        "effects": [
+          {
+            "numerator": "6",
+            "denominator": "7"
+          },
+          {
+            "numerator": "6",
+            "denominator": "7"
+          }
+        ]
+      },
+      {
+        "removed_case": "synthetic-win-5",
+        "changes": [
+          {
+            "name": "first",
+            "reject_equal_discordance": false,
+            "direction": 1,
+            "decision_changed": true,
+            "direction_changed": false
+          },
+          {
+            "name": "second",
+            "reject_equal_discordance": false,
+            "direction": 1,
+            "decision_changed": true,
+            "direction_changed": false
+          }
+        ],
+        "effects": [
+          {
+            "numerator": "6",
+            "denominator": "7"
+          },
+          {
+            "numerator": "6",
+            "denominator": "7"
+          }
+        ]
+      },
+      {
+        "removed_case": "synthetic-win-6",
+        "changes": [
+          {
+            "name": "first",
+            "reject_equal_discordance": false,
+            "direction": 1,
+            "decision_changed": true,
+            "direction_changed": false
+          },
+          {
+            "name": "second",
+            "reject_equal_discordance": false,
+            "direction": 1,
+            "decision_changed": true,
+            "direction_changed": false
+          }
+        ],
+        "effects": [
+          {
+            "numerator": "6",
+            "denominator": "7"
+          },
+          {
+            "numerator": "6",
+            "denominator": "7"
+          }
+        ]
+      }
+    ],
+    "details_omitted": 0,
+    "complete_diagnostics_sha256": "fa257165c224ed95894264aeab1ee3c01bce89e8b145250f71b69a2910a56b2f",
+    "effect_units": "candidate pass fraction minus baseline pass fraction",
+    "limitations": [
+      "Deletion results are sensitivity diagnostics, not replacement analyses or adjusted inference.",
+      "Keep the original full-data decision and full prespecified family; do not choose cases to delete.",
+      "Single-case stability does not establish robustness to multiple deletions, clusters, label errors or selection.",
+      "Independence, representative sampling and honest outcomes are not established by this review.",
+      "Non-rejection is not equivalence; small p-values do not measure practical value.",
+      "Direction is encoded as -1 baseline, 0 tie, 1 candidate."
+    ]
+  },
+  "limits": [
+    "Descriptive engineering tolerance only; passing does not establish statistical equivalence.",
+    "The full-data analysis and all candidates remain unchanged; never choose deletions to improve a decision.",
+    "Only one-case deletions are checked; no robustness to clusters, multiple omissions, or label errors is established.",
+    "Reference and tolerances are user assertions, not estimated confidence or measurement uncertainty.",
+    "Declare the band before inspecting outcomes to avoid a post hoc acceptance claim.",
+    "No evidence of honest labels, representative sampling, independent cases or preregistration is supplied.",
+    "The SHA-256 pin binds selected CSV bytes, not their authenticity or authorship.",
+    "Output is ASCII JSON; decoded strings require escaping for HTML or Markdown."
+  ],
+  "data_kind": "synthetic_demonstration"
+}

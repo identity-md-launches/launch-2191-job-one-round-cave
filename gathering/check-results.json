@@ -122,6 +122,26 @@
       "exit_code": 0
     },
     {
+      "suite": "line-1/tools/case-influence",
+      "tests": 11,
+      "exit_code": 0
+    },
+    {
+      "suite": "line-2/tools/unicode-crosscheck",
+      "tests": 18,
+      "exit_code": 0
+    },
+    {
+      "suite": "line-3/tools/timeline-peaks",
+      "tests": 8,
+      "exit_code": 0
+    },
+    {
+      "suite": "line-4/tools/tolerance-flint",
+      "tests": 9,
+      "exit_code": 0
+    },
+    {
       "suite": "gathering",
       "tests": 12,
       "exit_code": 0
@@ -153,6 +173,11 @@
     },
     {
       "suite": "shared/benchmark-display",
+      "tests": 9,
+      "exit_code": 0
+    },
+    {
+      "suite": "shared/effect-band",
       "tests": 9,
       "exit_code": 0
     }
@@ -351,8 +376,8 @@
       "unicode_version": "15.0.0"
     }
   ],
-  "test_count": 435,
+  "test_count": 490,
   "line_files_unchanged": true,
-  "line_file_count": 184,
+  "line_file_count": 216,
   "line_3_fixture_note": "Unmodified source and suite copied to test/scratch/time-flint before discovery."
 }

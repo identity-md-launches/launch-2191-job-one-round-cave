@@ -2,6 +2,458 @@
   "checks_passed": true,
   "examples": [
     {
+      "name": "measured effect band",
+      "command": [
+        "python3",
+        "-B",
+        "gathering/try_effect_band.py"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "observed": {
+        "recheck": "passed"
+      }
+    },
+    {
+      "name": "shared effect band",
+      "command": [
+        "python3",
+        "-B",
+        "shared/effect-band/effect_band.py",
+        "demo"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "observed": {
+        "candidates": [
+          {
+            "candidate": "first",
+            "full_effect": "7/8",
+            "single_deletion_range": {
+              "minimum": "6/7",
+              "maximum": "1"
+            },
+            "full_data_check": {
+              "schema": "tolerance-flint/v1",
+              "request": {
+                "observed": "7/8",
+                "reference": "4/5",
+                "absolute": "1/10",
+                "relative": "0",
+                "to": "1"
+              },
+              "rule": "abs(observed-reference) <= absolute + relative*abs(reference)",
+              "unit": "1",
+              "base_unit": "1",
+              "observed": "0.875",
+              "reference": "0.8",
+              "difference": "0.075",
+              "absolute_error": "0.075",
+              "absolute_tolerance": "0.1",
+              "relative_tolerance": "0",
+              "relative_contribution": "0",
+              "allowed_error": "0.1",
+              "margin": "0.025",
+              "inclusive": true,
+              "passes": true
+            },
+            "minimum_check": {
+              "schema": "tolerance-flint/v1",
+              "request": {
+                "observed": "6/7",
+                "reference": "4/5",
+                "absolute": "1/10",
+                "relative": "0",
+                "to": "1"
+              },
+              "rule": "abs(observed-reference) <= absolute + relative*abs(reference)",
+              "unit": "1",
+              "base_unit": "1",
+              "observed": "6/7",
+              "reference": "0.8",
+              "difference": "2/35",
+              "absolute_error": "2/35",
+              "absolute_tolerance": "0.1",
+              "relative_tolerance": "0",
+              "relative_contribution": "0",
+              "allowed_error": "0.1",
+              "margin": "3/70",
+              "inclusive": true,
+              "passes": true
+            },
+            "maximum_check": {
+              "schema": "tolerance-flint/v1",
+              "request": {
+                "observed": "1",
+                "reference": "4/5",
+                "absolute": "1/10",
+                "relative": "0",
+                "to": "1"
+              },
+              "rule": "abs(observed-reference) <= absolute + relative*abs(reference)",
+              "unit": "1",
+              "base_unit": "1",
+              "observed": "1",
+              "reference": "0.8",
+              "difference": "0.2",
+              "absolute_error": "0.2",
+              "absolute_tolerance": "0.1",
+              "relative_tolerance": "0",
+              "relative_contribution": "0",
+              "allowed_error": "0.1",
+              "margin": "-0.1",
+              "inclusive": true,
+              "passes": false
+            },
+            "all_single_deletion_effects_within_band": false
+          },
+          {
+            "candidate": "second",
+            "full_effect": "7/8",
+            "single_deletion_range": {
+              "minimum": "6/7",
+              "maximum": "1"
+            },
+            "full_data_check": {
+              "schema": "tolerance-flint/v1",
+              "request": {
+                "observed": "7/8",
+                "reference": "4/5",
+                "absolute": "1/10",
+                "relative": "0",
+                "to": "1"
+              },
+              "rule": "abs(observed-reference) <= absolute + relative*abs(reference)",
+              "unit": "1",
+              "base_unit": "1",
+              "observed": "0.875",
+              "reference": "0.8",
+              "difference": "0.075",
+              "absolute_error": "0.075",
+              "absolute_tolerance": "0.1",
+              "relative_tolerance": "0",
+              "relative_contribution": "0",
+              "allowed_error": "0.1",
+              "margin": "0.025",
+              "inclusive": true,
+              "passes": true
+            },
+            "minimum_check": {
+              "schema": "tolerance-flint/v1",
+              "request": {
+                "observed": "6/7",
+                "reference": "4/5",
+                "absolute": "1/10",
+                "relative": "0",
+                "to": "1"
+              },
+              "rule": "abs(observed-reference) <= absolute + relative*abs(reference)",
+              "unit": "1",
+              "base_unit": "1",
+              "observed": "6/7",
+              "reference": "0.8",
+              "difference": "2/35",
+              "absolute_error": "2/35",
+              "absolute_tolerance": "0.1",
+              "relative_tolerance": "0",
+              "relative_contribution": "0",
+              "allowed_error": "0.1",
+              "margin": "3/70",
+              "inclusive": true,
+              "passes": true
+            },
+            "maximum_check": {
+              "schema": "tolerance-flint/v1",
+              "request": {
+                "observed": "1",
+                "reference": "4/5",
+                "absolute": "1/10",
+                "relative": "0",
+                "to": "1"
+              },
+              "rule": "abs(observed-reference) <= absolute + relative*abs(reference)",
+              "unit": "1",
+              "base_unit": "1",
+              "observed": "1",
+              "reference": "0.8",
+              "difference": "0.2",
+              "absolute_error": "0.2",
+              "absolute_tolerance": "0.1",
+              "relative_tolerance": "0",
+              "relative_contribution": "0",
+              "allowed_error": "0.1",
+              "margin": "-0.1",
+              "inclusive": true,
+              "passes": false
+            },
+            "all_single_deletion_effects_within_band": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "single deletion influence",
+      "command": [
+        "python3",
+        "-B",
+        "line-1/tools/case-influence/case_influence.py",
+        "--demo",
+        "--max-details",
+        "2"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "observed": {
+        "cases_changing_decision_or_direction": 7,
+        "deletions_checked": 8,
+        "details_omitted": 5,
+        "complete_diagnostics_sha256": "fa257165c224ed95894264aeab1ee3c01bce89e8b145250f71b69a2910a56b2f",
+        "candidates": [
+          {
+            "name": "first",
+            "decision_changes": 7,
+            "direction_changes": 0,
+            "minimum_effect": {
+              "numerator": "6",
+              "denominator": "7"
+            },
+            "maximum_effect": {
+              "numerator": "1",
+              "denominator": "1"
+            }
+          },
+          {
+            "name": "second",
+            "decision_changes": 7,
+            "direction_changes": 0,
+            "minimum_effect": {
+              "numerator": "6",
+              "denominator": "7"
+            },
+            "maximum_effect": {
+              "numerator": "1",
+              "denominator": "1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "cross-file Unicode collisions",
+      "command": [
+        "python3",
+        "-B",
+        "line-2/tools/unicode-crosscheck/unicode_crosscheck.py",
+        "--demo",
+        "--max-findings",
+        "2"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "observed": {
+        "omitted_findings": 1,
+        "total_bytes": 43,
+        "token_count": 4,
+        "distinct_skeletons": 1,
+        "retained_findings": 2,
+        "truncated": true,
+        "finding_count": 3,
+        "assessment": "review-required"
+      }
+    },
+    {
+      "name": "actual cross-file sources",
+      "command": [
+        "python3",
+        "-B",
+        "line-2/tools/unicode-crosscheck/unicode_crosscheck.py",
+        "--files",
+        "line-1/tools/paired-verdict/paired_verdict.py",
+        "line-2/tools/unicode-lantern/unicode_lantern.py",
+        "line-2/tools/unicode-text-window/unicode_text_window.py"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "observed": {
+        "omitted_findings": 0,
+        "total_bytes": 22733,
+        "token_count": 2483,
+        "distinct_skeletons": 782,
+        "retained_findings": 0,
+        "truncated": false,
+        "finding_count": 0,
+        "assessment": "no-cross-file-collisions-found"
+      }
+    },
+    {
+      "name": "shared-time peaks",
+      "command": [
+        "python3",
+        "-B",
+        "line-3/tools/timeline-peaks/timeline_peaks.py",
+        "demo"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "observed": {
+        "replay": {
+          "clock_uncertainty_ms": 500,
+          "events": 4,
+          "omitted": 0,
+          "sources": 4,
+          "verified": true
+        },
+        "counts": {
+          "largest_transitive_component_events": 3,
+          "maximum_shared_time_events": 2,
+          "peak_windows_not_shown": 0,
+          "peak_windows_shown": 2,
+          "peak_windows_total": 2,
+          "timestamped_events": 4,
+          "transitive_overlap_components": 2,
+          "undated_lines": 0
+        }
+      }
+    },
+    {
+      "name": "tolerance boundaries",
+      "command": [
+        "python3",
+        "-B",
+        "line-4/tools/tolerance-flint/tolerance_flint.py",
+        "demo"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "observed": {
+        "boundary": {
+          "absolute_error": "6",
+          "absolute_tolerance": "1",
+          "allowed_error": "6",
+          "base_unit": "m",
+          "difference": "6",
+          "inclusive": true,
+          "margin": "0",
+          "observed": "1006",
+          "passes": true,
+          "reference": "1000",
+          "relative_contribution": "5",
+          "relative_tolerance": "0.005",
+          "request": {
+            "absolute": "1 mm",
+            "observed": "100.6 cm",
+            "reference": "1 m",
+            "relative": "0.005",
+            "to": "mm"
+          },
+          "rule": "abs(observed-reference) <= absolute + relative*abs(reference)",
+          "schema": "tolerance-flint/v1",
+          "unit": "mm"
+        },
+        "outside": {
+          "absolute_error": "6.001",
+          "absolute_tolerance": "1",
+          "allowed_error": "6",
+          "base_unit": "m",
+          "difference": "6.001",
+          "inclusive": true,
+          "margin": "-0.001",
+          "observed": "1006.001",
+          "passes": false,
+          "reference": "1000",
+          "relative_contribution": "5",
+          "relative_tolerance": "0.005",
+          "request": {
+            "absolute": "1 mm",
+            "observed": "100.6001 cm",
+            "reference": "1 m",
+            "relative": "0.005",
+            "to": "mm"
+          },
+          "rule": "abs(observed-reference) <= absolute + relative*abs(reference)",
+          "schema": "tolerance-flint/v1",
+          "unit": "mm"
+        }
+      }
+    },
+    {
+      "name": "tolerance boundary pass",
+      "command": [
+        "python3",
+        "-B",
+        "line-4/tools/tolerance-flint/tolerance_flint.py",
+        "check",
+        "100.6 cm",
+        "--reference",
+        "1 m",
+        "--absolute",
+        "1 mm",
+        "--relative",
+        "1/200",
+        "--to",
+        "mm"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "observed": {
+        "margin": "0",
+        "allowed_error": "6",
+        "absolute_error": "6",
+        "passes": true,
+        "unit": "mm"
+      }
+    },
+    {
+      "name": "tolerance boundary fail",
+      "command": [
+        "python3",
+        "-B",
+        "line-4/tools/tolerance-flint/tolerance_flint.py",
+        "check",
+        "100.6001 cm",
+        "--reference",
+        "1 m",
+        "--absolute",
+        "1 mm",
+        "--relative",
+        "1/200"
+      ],
+      "expected_exit": 1,
+      "exit_code": 1,
+      "passed": true,
+      "observed": {
+        "margin": "-0.000001",
+        "allowed_error": "0.006",
+        "absolute_error": "0.006001",
+        "passes": false,
+        "unit": "m"
+      }
+    },
+    {
+      "name": "invalid tolerance dimension",
+      "command": [
+        "python3",
+        "-B",
+        "line-4/tools/tolerance-flint/tolerance_flint.py",
+        "check",
+        "0 m",
+        "--reference",
+        "0 s"
+      ],
+      "expected_exit": 2,
+      "exit_code": 2,
+      "passed": true,
+      "diagnostic": "tolerance-flint: observed and reference dimensions must match, including zero\n"
+    },
+    {
       "name": "shared exact benchmark display",
       "command": [
         "python3",

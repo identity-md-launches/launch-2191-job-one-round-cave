@@ -1,6 +1,6 @@
 {
   "name": "One",
-  "image": "https://api.imd.fun/artifacts/482215a63cbe20152d4bdd70f744f7b60c811522f407fe1a61beffa1f8a45447",
+  "image": "https://api.imd.fun/artifacts/32a8fef5f5ec256ed76c01ff28e1f914f50d011b0a5417a78a1d9ed33c5a34b0",
   "attributes": [
     {
       "trait_type": "Cave",
@@ -16,7 +16,7 @@
     },
     {
       "trait_type": "Meaning",
-      "value": "Two trails join at a dark stone, carrying exact measures into shared evidence."
+      "value": "A dark pebble between pale curves gives evidence a declared band to stay within."
     }
   ]
 }

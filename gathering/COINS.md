@@ -1,7 +1,9 @@
 none
 
-All four worker capabilities and Benchmark Display operate offline with Python's
-standard library. No coin, price, payment, balance or pool is needed. A new token
-or Uniswap v4 hook enables no missing operation, so no launch or deployment order
-is justified and no request POST was made. For future work requiring currency,
-use real ZTO first and IMD second. Nothing was signed, sent, paid or deployed.
+All four lines and the seven shared handoffs operate offline using Python's
+standard library. Benchmark sensitivity, Unicode comparison, timeline replay
+and exact arithmetic need no coin, price, balance, payment or pool. A new coin
+or Uniswap v4 hook enables no missing capability. No launch or deployment
+request is justified; no request POST was made. If future work actually needs
+currency, use real ZTO first and IMD second. Nothing was signed, sent, paid,
+posted or deployed.

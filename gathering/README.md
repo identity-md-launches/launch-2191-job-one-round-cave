@@ -1,24 +1,32 @@
-# The Joining Stone — eighth gathering
+# The Measured Gap — ninth gathering
 
-[Benchmark Display](../shared/benchmark-display/README.md) carries Line 4's exact
-rounding into Line 1's replayed benchmark evidence. Python 3.10+, standard library,
-offline; copy its entire folder for portable use:
+[Effect Band](../shared/effect-band/README.md) connects Line 1's benchmark deletion
+sensitivity with Line 4's exact absolute-plus-relative tolerances. Copy its whole
+folder to use independently, offline, with Python 3.10+ and the standard library.
 
 ```sh
-python3 -B shared/benchmark-display/benchmark_display.py demo
+python3 -B shared/effect-band/effect_band.py demo
 ```
 
-Observed real local policy execution: 10/18, 14/18, 18/18 passes display as
-55.56%, 77.78%, 100.00%, each with exact fraction and rounding error. P-values
-and test decisions stay exact and unchanged. The curated fixture supports no
-population inference. The receipt command replays complete evidence against two
-retained pins; it does not reexecute candidates. See its README for the interface.
-Nine integration tests passed, including copied-folder use and forgery rejection.
+The synthetic full effect 7/8 meets 4/5 ± 1/10, while its deletion range [6/7,1]
+does not. Original complete statistical decisions remain unchanged. A descriptive
+band is not statistical equivalence; never select deletions to improve a decision.
+Nine integration tests pass, including independent Fraction comparisons and a
+standalone copied-folder CLI. Source snapshots and their provenance ship as files.
 
-[REPORT.md](REPORT.md) covers all four goals, 24 tools, observed behavior, limits,
-21-Pepe scope, and the repaired historical Window Review provenance check.
-**435 tests and 47 CLI exercises passed.** All line folders and records remain
-unchanged. [COINS.md](COINS.md) says none: no capability requires currency.
+```sh
+python3 -B gathering/try_effect_band.py
+```
+
+Actual local fixed-policy execution on 18 curated JSON cases also works. Results,
+complete paired CSV and its hash are in `measured-effect-band.json`. This fixture
+supports no population inference; the example band was chosen after the fixture.
+
+[REPORT.md](REPORT.md) covers all four lines, their 28 tools, what was tried,
+observed behavior, limits and ways to keep each goal within 21 Pepes.
+**490 tests and 57 CLI checks passed.** No outstanding line failure was found.
+All line folders and line records remain unchanged. [COINS.md](COINS.md) says
+none: no capability requires a coin or payment.
 
 ```sh
 python3 -B gathering/check_tools.py
@@ -27,32 +35,33 @@ python3 -B gathering/verify.py
 python3 -B gathering/check_gallery.py
 ```
 
-Wall: `artifacts/gathering/wall-v8.png`, **1254 × 1254 RGB8 PNG**.
-Preview: `dist/gathering/08.jpg`, **512 × 512 baseline JPEG, 97,606 bytes**.
-Built-in imagegen supplied the joining motif; only its generated ochre/charcoal
-pigment was composited. Exactly 2,225 pixels change from gathering seven; every
-pixel outside the added pigment mask remains identical. Both hands retain five
-digits. No new hands, letters or numbers. Full wall and preview inspected;
-no unmet visual requirements observed. The small motif is less distinct at
-preview size; independent artistic approval is not claimed.
+Final wall: `artifacts/gathering/wall-v9.png`, **1254 × 1254 RGB8 PNG**.
+Preview: `dist/gathering/09.jpg`, **512 × 512 baseline JPEG, 97,774 bytes**.
+Built-in imagegen supplied two chalk curves and one charcoal pebble; only its
+pigment was composited onto the ancestral wall. Exactly 1,361 pixels changed in
+`[912,784,1008,853)`; all other pixels remain identical. Both inherited hands
+retain five digits each. No new hands, letters or numbers. Full wall and JPEG
+were visually reviewed; **no unmet visual requirements observed**. The small
+motif is less distinct in preview, and independent artistic approval is not claimed.
 
-[image-prompt.txt](image-prompt.txt) records the prompt and built-in mode.
-`mark-process.json` and `wall-review.json` record processing and review.
-`add_mark8.js` requires the original generated donor, not the finished output;
-it is not a generator or a repeatable command against the finished wall.
+[image-prompt.txt](image-prompt.txt) records the prompt, built-in mode and actual
+placement. `mark-process.json` records source hashes and the preservation method.
+`add_mark9.js` requires the original generated donor, not the finished output;
+it is a processing record, not a command to rerun on the finished wall.
 
-`08.json` and `one.json` use the actual PNG hash. `dist/goals.json` copies exact
-goals. `dist/index.html` lists all 130 records, painted newest first by wall,
-then future slots. Local previews, inline styles and no scripts/fonts make it
-self-contained; full artifact links need the artifact service. All earlier
-records and future placeholders remain.
+`09.json` and `one.json` use the final PNG hash; One keeps number 736. The goals
+copy the four existing GOAL.md files. `dist/index.html` displays all 134 numbered
+records (42 painted and 92 future), by wall, painted newest first. Local JPEGs,
+inline styles and no scripts/fonts allow offline browsing of all previews; full
+PNG links require the artifact service. Existing ancestral and future records
+remain. This was not the first gathering, so no new placeholder set was needed.
 
 ```sh
-python3 -B gathering/make_preview.py artifacts/gathering/wall-v8.png dist/gathering/08.jpg
+python3 -B gathering/make_preview.py artifacts/gathering/wall-v9.png dist/gathering/09.jpg
 python3 -B gathering/build_dist.py
 ```
 
-`wall.png` is a relative alias of the named PNG, which remains untracked for
-separate upload. Structural checks verify paths and bytes; they do not certify
-behavior, browser rendering or scientific claims. No dependency installation,
-network operation, transaction, wallet or environment access is required.
+`wall.png` is a relative alias of the required PNG. The PNG remains untracked for
+separate upload. The source deliverable needs no installed dependencies or
+network. Structural checks establish bytes and paths, not scientific claims,
+browser layout, security or independent visual approval.
