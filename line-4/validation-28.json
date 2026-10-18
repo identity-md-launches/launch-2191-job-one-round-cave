@@ -1,0 +1,63 @@
+{
+  "number": 28,
+  "goal_byte_identical": true,
+  "inherited_tracked_files_byte_identical": 59,
+  "older_numbered_records_byte_identical": 27,
+  "tool": {
+    "name": "Tolerance Flint",
+    "new_tests_passed": 9,
+    "independent_fraction_oracle_cases": 1000,
+    "inherited_tests_passed": 47,
+    "documented_command_passed": true,
+    "standalone_folder_demo_passed": true,
+    "snapshot_engine_sha256": "c683e558cdbdf6cf73d4b32572b6fa498b80e7816483b882bf2d51adfff3062e",
+    "dependencies": "Python standard library only"
+  },
+  "wall": {
+    "path": "artifacts/line-4/wall-v9.png",
+    "format": "PNG",
+    "mode": "RGB8",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 4040496,
+    "sha256": "0640ff56d8d1ec134a9679dcb86512fe360d62dc2a2600d9bd5b49f5570b51c4",
+    "inherited_wall": "artifacts/line-4/wall-v8.png",
+    "changed_pixels": 2316,
+    "changed_bbox_xyxy_inclusive": [
+      203,
+      223,
+      345,
+      266
+    ],
+    "outside_mark_changed_pixels": 0,
+    "untracked_for_uploader": true
+  },
+  "preview": {
+    "path": "dist/line-4/28.jpg",
+    "format": "baseline JPEG",
+    "width": 512,
+    "height": 512,
+    "bytes": 83169,
+    "dimensions_verified_from_jpeg_sof": true
+  },
+  "record": {
+    "path": "dist/line-4/28.json",
+    "shape_and_image_hash_valid": true
+  },
+  "visual_review": {
+    "method": "Finished full PNG and decoded JPEG visually inspected",
+    "inherited_five_digit_hands": 2,
+    "new_hands_or_stencils": 0,
+    "ancestral_pepe_and_marks_preserved": true,
+    "writing_or_prohibited_imagery_observed": false,
+    "unmet_visual_requirements": []
+  },
+  "limits": [
+    "Tolerance policy and quantities are user assertions, not verified measurements.",
+    "Relative tolerance uses only reference magnitude and allowances are summed.",
+    "Small added cord is less distinct in the preview.",
+    "Visual review and tests are local checks, not independent certification."
+  ],
+  "scope_check_passed": true,
+  "new_non_artifact_files_under_100000_bytes": true
+}

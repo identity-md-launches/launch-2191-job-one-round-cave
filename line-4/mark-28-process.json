@@ -1,0 +1,15 @@
+{
+  "method": "Retain only generated charcoal pebble and yellow-ochre cord pigment on inherited bare stone; preserve all other pixels.",
+  "image_tool": "installed mcp image generator (built-in image_gen)",
+  "ancestor": "artifacts/line-4/wall-v8.png",
+  "ancestor_sha256": "1d4b20b0450ac12336197845e4cebae6c920dc44288f63bc69df94af4866f533",
+  "generated_donor_sha256": "1287499f8fabaf23f5ae8afde4e4250f5b1998cc9153c75eda7e66c4ef90928a",
+  "destination_box": [
+    195,
+    217,
+    351,
+    272
+  ],
+  "changed_pixels": 2316,
+  "preservation": "All pixels outside the added pigment mask are identical to Line 4 mark 27."
+}

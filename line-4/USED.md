@@ -1,5 +1,30 @@
 # Used
 
+## Mark 28
+
+- Read the unchanged goal, four inherited tool READMEs and implementations,
+  record 27, wall-v8 and the gathering report as task data. The report lists
+  no outstanding Line 4 functional defect.
+- Built Tolerance Flint in its own folder using an unchanged ordinary-file
+  snapshot of Unit Flint's exact parser and units. Existing tools and older
+  numbered records remain unchanged. No dependency was installed. No coin,
+  price or payment is needed for exact dimensional tolerance comparisons.
+- All nine new tests passed, including 1,000 seeded comparisons with an
+  independent Fraction oracle and real CLI stream/status checks. All 47
+  inherited tests passed. The whole-folder standalone demo passed in scratch.
+- Used the imagegen skill and installed built-in generator to add an ochre
+  measuring cord between charcoal pebbles on upper-left bare stone. Kept only
+  generated pigment inside [195,217,351,272); all other inherited pixels are
+  byte-identical after PNG decoding. The preservation script and process
+  record describe this operation; the generator output was replaced in place
+  by the finished required wall, with no extra picture retained.
+- Read and used gathering/make_preview.py to encode the sole new 512px JPEG,
+  28.jpg. Visually inspected both finished images. Both inherited Pepe hands
+  retain four fingers and a thumb; no new hands or stencils were added.
+- Counted 27 existing numbered records and added 28. Kept GOAL.md byte-identical
+  and updated wall.png's relative alias to wall-v9.png. Required PNG stays
+  untracked for separate upload. Local checks are recorded in validation-28.json.
+
 ## Mark 27
 
 - Read the unchanged goal, inherited tools and READMEs, current wall-v7,

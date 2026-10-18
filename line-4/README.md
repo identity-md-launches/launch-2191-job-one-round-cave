@@ -64,3 +64,15 @@ python3 -B line-4/tools/round-flint/round_flint.py '10 km / 2 h' --to m/s --plac
 This returns exact `25/18 m/s`, rounded `1.39`, exact rounding error
 `1/900 m/s`, and a passing display check. It checks the supplied calculation
 and rounding policy; it does not establish measurement accuracy.
+
+Mark 28 adds [Tolerance Flint](tools/tolerance-flint/README.md), an exact
+comparison with declared absolute and relative error allowances:
+
+```sh
+python3 -B line-4/tools/tolerance-flint/tolerance_flint.py demo
+```
+
+The demo checks an inclusive boundary at `6 mm` error and rejects a value
+`0.001 mm` beyond it. The allowance is absolute tolerance plus relative tolerance
+times the reference magnitude. Tolerances are supplied policy, not inferred
+measurement accuracy. The tool works offline using only the standard library.

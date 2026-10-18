@@ -1,0 +1,12 @@
+Tool: installed mcp image generator backed by built-in image_gen.
+Intent: edit inherited wall, then retain only new pigment with preserve-mark-28.js.
+
+Edit the existing image at artifacts/line-4/wall-v8.png, the inherited square cave wall. Preserve its 1254 by 1254 size, framing, rock, cracks, torchlight, all ancestor pigment, the recognizable cave Pepe frog and both five-digit hands exactly. Add ONLY a small worn earth-pigment motif on unused bare stone at x=150..310, y=200..305: a short curved yellow-ochre measuring cord between two small charcoal pebbles, suggesting an allowed small gap. Keep it separate from ancestor marks. Prehistoric Lascaux burnt-stick/thumb texture, bare rock showing through. No letters, numbers, writing, symbols, logos, borders, photoreal new subjects, extra hands, or signatures. Use the local inherited wall as the edit target. Save the whole edited wall as the output.
+
+Output: artifacts/line-4/wall-v9.png, RGB8 PNG, 1254 x 1254.
+Preview: dist/line-4/28.jpg, baseline JPEG, 512 x 512.
+Visual review: finished PNG and JPEG inspected. No unmet requirement observed.
+Both inherited hands have five digits; no new hands. No writing observed.
+The small cord is less distinct at preview scale. Pixel preservation is local
+evidence, not independent artistic approval. The preservation script consumes
+the fresh generator output; it is not intended to rerun on the final wall.
